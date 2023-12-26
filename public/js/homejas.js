@@ -1,5 +1,3 @@
-let viewportWidth = 0
-
 window.addEventListener('scroll', function() {
     const viewportWidth = window.innerWidth;
     var navbar = document.getElementById('jobsnamed');
@@ -50,3 +48,5 @@ window.addEventListener('scroll', function() {
         }
     }
 });
+
+
