@@ -9,7 +9,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 7px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -161,7 +161,7 @@ body {
 
 :root {
     --body-color : rgb(32, 32, 32);
-    --top-nav-color : rgba(65, 29, 0, 0.973);
+    --top-nav-color : rgba(58, 26, 0, 0.884);
     --text-color : rgb(255, 255, 255);
     --pointed-btn : rgba(0, 0, 0, 0.363);
 }
