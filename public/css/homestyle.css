@@ -1,0 +1,107 @@
+.maindv {
+    position: relative;
+    width: 100%;
+    height: 3000px;
+    padding-top: 0px;
+}
+
+#navba1 {
+    display: block !important;
+}
+
+#bannerdv {
+    position: relative;
+    height: 670px;
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    box-shadow: 6px 5px 10px hsla(0, 0%, 0%, 0.233);
+}
+
+#banner {
+    width: 100%;
+    height: 100%;
+    position: inherit;
+    object-fit: cover;
+    height: 100vh;
+    position: absolute;
+}
+
+@media only screen and (max-device-width: 1366px) {
+    #banner {
+        top: scroll;
+    }
+}
+
+#homehoverdv {
+    top: min(90vw, 540px);
+    position: absolute;
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height:  min(45vw, 420px);
+    z-index: 2;
+    background-color: var(--blur-hoverdiv);
+    transition: ease top 400ms;
+}
+
+
+#homesen {
+    line-height: min(9vw, 100px);
+    padding: min(4vw, 50px) 0px 0px min(8vw, 100px);
+    font-family: f-black;
+    color: var(--text-color);
+    font-size: min(9.8vw, 110px);
+}
+
+#homejob {
+    font-weight: 10;
+    padding-left: min(8vw, 100px);
+    font-family: f-bold;
+    color: var(--text-color);
+    font-size: min(5vw, 50px);
+    color: var(--text-homeportfo);
+}
+
+#wlcme {
+    color: var(--text-wlcm);
+    font-size: min(4vw, 30px);
+    padding : 20px 20px 0px min(8vw, 100px);
+    font-family: f-regular;
+}
+
+#content {
+    padding-top: min(40vw, 400px);
+    position: relative;
+}
+
+#jobsnamed.inactive {
+    position: relative;
+    top: 120px;
+    padding-left: min(8vw, 100px);
+    color: var(--text-color);
+    font-size: min(5vw, 40px);
+    opacity: 0;
+    transition: ease all 200ms;
+}
+
+#jobsnamed.active {
+    position: relative;
+    top: 0px;
+    padding-left: min(8vw, 100px);
+    color: var(--text-color);
+    font-size: min(5vw, 40px);
+    opacity: 100;
+    transition: ease all 200ms;
+}
+
+@media screen and (max-width: 630px){
+    #homehoverdv {
+        top: 590px;
+    }
+}
+
+:root {
+    --text-homeportfo : rgb(190, 170, 81);
+    --text-wlcm : hsla(263, 100%, 79%, 0.932);
+    --blur-hoverdiv : hsla(0, 0%, 0%, 0.233);
+}

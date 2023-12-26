@@ -1,0 +1,167 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: f-regular;
+}
+
+body {
+    background-color: var(--body-color);
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #181818;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #585858;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: rgb(63, 63, 63);
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--body-color);
+}
+
+@font-face {
+    font-family: f-Regular;
+    src: url(/font/Satoshi-Regular.woff2);
+}
+
+@font-face {
+    font-family: f-Black;
+    src: url(/font/Satoshi-Black.woff2);
+}
+
+@font-face {
+    font-family: f-Bold;
+    src: url(/font/Satoshi-Bold.woff2);
+}
+
+@font-face {
+    font-family: f-Medium;
+    src: url(/font/Satoshi-Medium.woff2);
+}
+
+
+
+.container {
+    z-index: 1;
+}
+
+#backnav.active {
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 100;
+    backdrop-filter: blur(4px);
+    background-color: var(--top-nav-color);
+    transition: ease 500ms;
+}
+
+#backnav.inactive {
+    top: -50px;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 100;
+    backdrop-filter: blur(4px);
+    background-color: var(--top-nav-color);
+    transition: ease 500ms;
+}
+
+#navbar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    align-items: center;
+    padding: 0px 15px;
+}
+
+#navlogo {
+    width: 26px;
+    position: relative;
+}
+
+#navdivbutton {
+    position: relative;
+    float: right;
+    justify-content: right;
+    right: 0px;
+    min-width: 290px;
+    text-align: right;
+}
+
+.navbtn {
+    display: inline-flex;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: ease 100ms;
+    font-family: f-Regular;
+    font-size: 15px;
+    justify-content: center;
+}
+
+.actvnvbt {
+    position: absolute;
+    margin-top: 32px;
+    display: none;
+}
+
+#navbtnhdn {
+    max-width: 25px;
+    display: none;
+    color: var(--text-color);
+    border-radius: 5px;
+    padding: 0px;
+}
+
+#navbtnhdn:hover {
+    background-color: var(--pointed-btn);
+}
+
+.navbtn:hover {
+    background-color: var(--pointed-btn);
+    transition: ease 100ms;
+}
+
+#zxnnavtx {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: var(--text-color);
+    font-family: f-Bold;
+}
+
+@media screen and (max-width: 630px){
+    .navbtn {
+        display: none;
+    }
+    #navdivbutton {
+        min-width: 27px;
+    }
+    #navbtnhdn {
+        display: block;
+    }
+}
+
+:root {
+    --body-color : rgb(32, 32, 32);
+    --top-nav-color : rgba(65, 29, 0, 0.973);
+    --text-color : rgb(255, 255, 255);
+    --pointed-btn : rgba(0, 0, 0, 0.363);
+}
