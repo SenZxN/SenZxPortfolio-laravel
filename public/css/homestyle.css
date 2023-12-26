@@ -74,7 +74,8 @@
     color: var(--text-color);
     font-size: min(5vw, 40px);
     opacity: 0;
-    transition: ease all 200ms 100ms;
+    transition-property: top, opacity;
+    transition: ease 200ms 100ms;
 }
 
 #jobsnamed.active {
@@ -84,31 +85,34 @@
     color: var(--text-color);
     font-size: min(5vw, 40px);
     opacity: 100;
-    transition: ease all 200ms 100ms;
+    transition-property: top, opacity;
+    transition: ease 200ms 100ms;
 }
 
 #aboutme.inactive {
     top: 90px;
     padding: 20px 50px 20px min(8vw, 100px);
-    font-size: 15px;
-    max-width: 800px;
+    font-size: min(2.9vw, 17px);
+    max-width: 900px;
     position: relative;
     color: var(--text-mye);
     opacity: 0;
     text-align: inherit;
-    transition: ease all 200ms 100ms;
+    transition-property: top, opacity;
+    transition: ease 200ms 100ms;
 }
 
 #aboutme.active {
     top: 0px;
     padding: 20px 50px 20px min(8vw, 100px);
-    font-size: 15px;
-    max-width: 800px;
+    font-size: min(2.9vw, 17px);
+    max-width: 900px;
     position: relative;
     color: var(--text-mye);
     opacity: 100;
     text-align: left;
-    transition: ease all 200ms 100ms;
+    transition-property: top, opacity;
+    transition: ease 200ms 100ms;
 }
 
 @media screen and (max-width: 630px){
