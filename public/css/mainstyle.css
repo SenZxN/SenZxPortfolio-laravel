@@ -30,6 +30,10 @@ a {
     text-decoration: none;
 }
 
+img {
+    object-fit: cover;
+}
+
 body {
     background-color: var(--body-color);
 }

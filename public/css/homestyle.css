@@ -115,10 +115,61 @@
     transition: ease 200ms 100ms;
 }
 
+.content {
+    max-width: 100%;
+}
+
+#content1 {
+    display: flex;
+    align-items: center;
+}
+
+#profilepic.inactive {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    padding: 0px 10%;
+    left: 0%;
+    opacity: 0;
+    transition: ease all 400ms;
+}
+
+#profilepic.active {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    padding: 0px 0%;
+    left: 10%;
+    opacity: 100;
+    transition: ease all 400ms;
+}
+
+#profpc {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    max-height: 240px;
+    max-width: 240px;
+}
+
+
 @media screen and (max-width: 630px){
     #homehoverdv {
         top: 590px;
     }
+}
+
+@media screen and (max-width : 1425px) {
+    #content1 {
+        display: block;
+    }
+    #profilepic {
+        top: 80px;
+        padding: 0px 20%;
+        justify-content: center;
+        left: 0% !important;
+    }
+
 }
 
 :root {
